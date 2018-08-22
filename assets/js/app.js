@@ -79,9 +79,9 @@
           })
         }
 
-        if(result.box){
-          Quagga.ImageDebug.drawPath(result.box, {x: 0, y: 1}, drawingCtx, {color: '#00f', lineWidth: 2})
-        }
+        // if(result.box){
+        //   Quagga.ImageDebug.drawPath(result.box, {x: 0, y: 1}, drawingCtx, {color: '#00f', lineWidth: 2})
+        // }
         if(result.codeResult && result.codeResult.code){
           Quagga.ImageDebug.drawPath(result.line, {x: 'x', y: 'y'}, drawingCtx, {color: 'red', lineWidth: 3})
         }
@@ -90,7 +90,7 @@
 
     Quagga.onDetected( (result) => {
       console.log('Barcode detected and processed: [' + result.codeResult.code + ']', result)
-      outputTxt.textContent = 'Barcode detected and processed: [' + result.codeResult.code + ']'
+      outputTxt.textContent = result.codeResult.code
     })
 
   }

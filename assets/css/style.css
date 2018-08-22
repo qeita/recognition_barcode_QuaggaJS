@@ -40,6 +40,7 @@ canvas.drawingBuffer{
   padding: 5px 20px;
   border: none;
   font-size: 14px;
+  line-height: 1.57;
   color: #444;
   border: 1px solid #888;
   border-radius: 16px;
@@ -67,8 +68,12 @@ canvas.drawingBuffer{
   .output{
     position: fixed;
     margin: 0;
-    bottom: 60px;
+    bottom: 80px;
     left: 0;
     width: 100%;
+  }
+  .output_txt{
+    font-size: 18px;
+    font-weight: bold;
   }
 }
