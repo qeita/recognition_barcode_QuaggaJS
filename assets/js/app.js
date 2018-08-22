@@ -55,6 +55,10 @@
         return
       }
       console.log('Initialization finished. Ready to start')
+      let video = document.querySelector('video')
+      video.setAttribute('playsinline', true)
+      video.setAttribute('muted', true)
+      video.setAttribute('controls', true)
       Quagga.start()
 
       _scannerIsRunning = true
