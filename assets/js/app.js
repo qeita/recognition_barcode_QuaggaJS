@@ -15,9 +15,13 @@
         type: 'LiveStream',
         target: document.querySelector('#scanner-container'),
         constraints: {
-          width: 480,
-          height: 320,
-          faceingMode: 'user'
+          audio: false,
+          video: {
+            faceingMode: 'user'
+          }
+          // width: 480,
+          // height: 320,
+          // faceingMode: 'user'
         }
       },
       decoder: {
