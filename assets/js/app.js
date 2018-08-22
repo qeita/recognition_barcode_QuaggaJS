@@ -93,7 +93,7 @@
 
     Quagga.onDetected( (result) => {
       console.log('Barcode detected and processed: [' + result.codeResult.code + ']', result)
-      outputTxt.textContent('Barcode detected and processed: [' + result.codeResult.code + ']')
+      outputTxt.textContent = 'Barcode detected and processed: [' + result.codeResult.code + ']'
     })
 
   }
