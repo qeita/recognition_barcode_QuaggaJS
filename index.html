@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Barcode scanner with QuaggaJS | Recognition</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+
+    <main>
+      <div id="scanner-container"></div>
+      <input type="button" id="btn" value="Start/Stop the scanner">
+      <div class="output">
+        <p class="output_txt"></p>
+      </div>
+    </main>
+    
+    <script defer async src="./assets/js/libs/quagga.min.js"></script>
+    <script defer async src="./assets/js/app.js"></script>
+  </body>
+</html>
