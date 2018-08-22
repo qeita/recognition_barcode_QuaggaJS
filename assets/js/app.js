@@ -19,9 +19,6 @@
           video: {
             faceingMode: 'user'
           }
-          // width: 480,
-          // height: 320,
-          // faceingMode: 'user'
         }
       },
       decoder: {
